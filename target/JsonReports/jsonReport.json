@@ -1,0 +1,219 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2020-12-29T14:26:53.778Z",
+        "line": 4,
+        "name": "validate google search is working",
+        "description": "",
+        "id": "test-google-search-functionality;validate-google-search-is-working",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1951467000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "browser is open",
+            "match": {
+              "location": "stepDefs.googleSearchStepDefs.browser_is_open()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2903537000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user is on google search page",
+            "match": {
+              "location": "stepDefs.googleSearchStepDefs.user_is_on_google_search_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 120032000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user enters a text in search box",
+            "match": {
+              "location": "stepDefs.googleSearchStepDefs.user_enters_a_text_in_search_box()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2315431000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "hits enter",
+            "match": {
+              "location": "stepDefs.googleSearchStepDefs.hits_enter()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 284357000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user navigated to search results",
+            "match": {
+              "location": "stepDefs.googleSearchStepDefs.user_navigated_to_search_results()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          }
+        ]
+      }
+    ],
+    "name": "test google search functionality",
+    "description": "",
+    "id": "test-google-search-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/googleSearch.feature",
+    "tags": [
+      {
+        "name": "@smoke",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2020-12-29T14:27:01.437Z",
+        "line": 4,
+        "name": "validate login is successful with valid credentials",
+        "description": "",
+        "id": "test-login-functionality;validate-login-is-successful-with-valid-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [],
+        "tags": [
+          {
+            "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-29T14:27:01.456Z",
+        "line": 14,
+        "name": "user able to login",
+        "description": "",
+        "id": "test-login-functionality;user-able-to-login;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3363691000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "firefox browser is open",
+            "match": {
+              "location": "stepDefs.loginStepDefs.firefox_browser_is_open()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1258854000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user is on login page",
+            "match": {
+              "location": "stepDefs.loginStepDefs.user_is_on_login_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 75522000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user enters cptimepass@gmail.com and 12345",
+            "match": {
+              "arguments": [
+                {
+                  "val": "cptimepass@gmail.com",
+                  "offset": 12
+                },
+                {
+                  "val": "12345",
+                  "offset": 37
+                }
+              ],
+              "location": "stepDefs.loginStepDefs.user_enters_username_and_password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 229939000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "click on login button",
+            "match": {
+              "location": "stepDefs.loginStepDefs.click_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 551960000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user navigated to the home page",
+            "match": {
+              "location": "stepDefs.loginStepDefs.user_navigated_to_the_home_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          }
+        ]
+      }
+    ],
+    "name": "test login functionality",
+    "description": "",
+    "id": "test-login-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/login.feature",
+    "tags": [
+      {
+        "name": "@smoke",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
